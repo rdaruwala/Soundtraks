@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C18D07961B5B2F5E001C1A27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */; };
+		C18D07981B5B2F5E001C1A27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07971B5B2F5E001C1A27 /* ViewController.swift */; };
+		C18D079B1B5B2F5E001C1A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18D07991B5B2F5E001C1A27 /* Main.storyboard */; };
+		C18D079E1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C18D079C1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld */; };
+		C18D07A01B5B2F5E001C1A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18D079F1B5B2F5E001C1A27 /* Assets.xcassets */; };
+		C18D07A31B5B2F5E001C1A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18D07A11B5B2F5E001C1A27 /* LaunchScreen.storyboard */; };
+		C18D07AE1B5B2F5E001C1A27 /* SoundtraksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07AD1B5B2F5E001C1A27 /* SoundtraksTests.swift */; };
+		C18D07B91B5B2F5E001C1A27 /* SoundtraksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07B81B5B2F5E001C1A27 /* SoundtraksUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C18D07AA1B5B2F5E001C1A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C18D078A1B5B2F5E001C1A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18D07911B5B2F5E001C1A27;
+			remoteInfo = Soundtraks;
+		};
+		C18D07B51B5B2F5E001C1A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C18D078A1B5B2F5E001C1A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18D07911B5B2F5E001C1A27;
+			remoteInfo = Soundtraks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C18D07921B5B2F5E001C1A27 /* Soundtraks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundtraks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C18D07971B5B2F5E001C1A27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C18D079A1B5B2F5E001C1A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C18D079D1B5B2F5E001C1A27 /* Soundtraks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soundtraks.xcdatamodel; sourceTree = "<group>"; };
+		C18D079F1B5B2F5E001C1A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C18D07A21B5B2F5E001C1A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C18D07A41B5B2F5E001C1A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18D07A91B5B2F5E001C1A27 /* SoundtraksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundtraksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18D07AD1B5B2F5E001C1A27 /* SoundtraksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundtraksTests.swift; sourceTree = "<group>"; };
+		C18D07AF1B5B2F5E001C1A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18D07B41B5B2F5E001C1A27 /* SoundtraksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundtraksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18D07B81B5B2F5E001C1A27 /* SoundtraksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundtraksUITests.swift; sourceTree = "<group>"; };
+		C18D07BA1B5B2F5E001C1A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C18D078F1B5B2F5E001C1A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D07A61B5B2F5E001C1A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D07B11B5B2F5E001C1A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C18D07891B5B2F5E001C1A27 = {
+			isa = PBXGroup;
+			children = (
+				C18D07941B5B2F5E001C1A27 /* Soundtraks */,
+				C18D07AC1B5B2F5E001C1A27 /* SoundtraksTests */,
+				C18D07B71B5B2F5E001C1A27 /* SoundtraksUITests */,
+				C18D07931B5B2F5E001C1A27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C18D07931B5B2F5E001C1A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C18D07921B5B2F5E001C1A27 /* Soundtraks.app */,
+				C18D07A91B5B2F5E001C1A27 /* SoundtraksTests.xctest */,
+				C18D07B41B5B2F5E001C1A27 /* SoundtraksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C18D07941B5B2F5E001C1A27 /* Soundtraks */ = {
+			isa = PBXGroup;
+			children = (
+				C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */,
+				C18D07971B5B2F5E001C1A27 /* ViewController.swift */,
+				C18D07991B5B2F5E001C1A27 /* Main.storyboard */,
+				C18D079F1B5B2F5E001C1A27 /* Assets.xcassets */,
+				C18D07A11B5B2F5E001C1A27 /* LaunchScreen.storyboard */,
+				C18D07A41B5B2F5E001C1A27 /* Info.plist */,
+				C18D079C1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld */,
+			);
+			path = Soundtraks;
+			sourceTree = "<group>";
+		};
+		C18D07AC1B5B2F5E001C1A27 /* SoundtraksTests */ = {
+			isa = PBXGroup;
+			children = (
+				C18D07AD1B5B2F5E001C1A27 /* SoundtraksTests.swift */,
+				C18D07AF1B5B2F5E001C1A27 /* Info.plist */,
+			);
+			path = SoundtraksTests;
+			sourceTree = "<group>";
+		};
+		C18D07B71B5B2F5E001C1A27 /* SoundtraksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C18D07B81B5B2F5E001C1A27 /* SoundtraksUITests.swift */,
+				C18D07BA1B5B2F5E001C1A27 /* Info.plist */,
+			);
+			path = SoundtraksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C18D07911B5B2F5E001C1A27 /* Soundtraks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18D07BD1B5B2F5E001C1A27 /* Build configuration list for PBXNativeTarget "Soundtraks" */;
+			buildPhases = (
+				C18D078E1B5B2F5E001C1A27 /* Sources */,
+				C18D078F1B5B2F5E001C1A27 /* Frameworks */,
+				C18D07901B5B2F5E001C1A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Soundtraks;
+			productName = Soundtraks;
+			productReference = C18D07921B5B2F5E001C1A27 /* Soundtraks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C18D07A81B5B2F5E001C1A27 /* SoundtraksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18D07C01B5B2F5E001C1A27 /* Build configuration list for PBXNativeTarget "SoundtraksTests" */;
+			buildPhases = (
+				C18D07A51B5B2F5E001C1A27 /* Sources */,
+				C18D07A61B5B2F5E001C1A27 /* Frameworks */,
+				C18D07A71B5B2F5E001C1A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18D07AB1B5B2F5E001C1A27 /* PBXTargetDependency */,
+			);
+			name = SoundtraksTests;
+			productName = SoundtraksTests;
+			productReference = C18D07A91B5B2F5E001C1A27 /* SoundtraksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C18D07B31B5B2F5E001C1A27 /* SoundtraksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18D07C31B5B2F5E001C1A27 /* Build configuration list for PBXNativeTarget "SoundtraksUITests" */;
+			buildPhases = (
+				C18D07B01B5B2F5E001C1A27 /* Sources */,
+				C18D07B11B5B2F5E001C1A27 /* Frameworks */,
+				C18D07B21B5B2F5E001C1A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18D07B61B5B2F5E001C1A27 /* PBXTargetDependency */,
+			);
+			name = SoundtraksUITests;
+			productName = SoundtraksUITests;
+			productReference = C18D07B41B5B2F5E001C1A27 /* SoundtraksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C18D078A1B5B2F5E001C1A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "New Trier Soundtraks";
+				TargetAttributes = {
+					C18D07911B5B2F5E001C1A27 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C18D07A81B5B2F5E001C1A27 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C18D07911B5B2F5E001C1A27;
+					};
+					C18D07B31B5B2F5E001C1A27 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C18D07911B5B2F5E001C1A27;
+					};
+				};
+			};
+			buildConfigurationList = C18D078D1B5B2F5E001C1A27 /* Build configuration list for PBXProject "Soundtraks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C18D07891B5B2F5E001C1A27;
+			productRefGroup = C18D07931B5B2F5E001C1A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C18D07911B5B2F5E001C1A27 /* Soundtraks */,
+				C18D07A81B5B2F5E001C1A27 /* SoundtraksTests */,
+				C18D07B31B5B2F5E001C1A27 /* SoundtraksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C18D07901B5B2F5E001C1A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D07A31B5B2F5E001C1A27 /* LaunchScreen.storyboard in Resources */,
+				C18D07A01B5B2F5E001C1A27 /* Assets.xcassets in Resources */,
+				C18D079B1B5B2F5E001C1A27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D07A71B5B2F5E001C1A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D07B21B5B2F5E001C1A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C18D078E1B5B2F5E001C1A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D079E1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld in Sources */,
+				C18D07981B5B2F5E001C1A27 /* ViewController.swift in Sources */,
+				C18D07961B5B2F5E001C1A27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D07A51B5B2F5E001C1A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D07AE1B5B2F5E001C1A27 /* SoundtraksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D07B01B5B2F5E001C1A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D07B91B5B2F5E001C1A27 /* SoundtraksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C18D07AB1B5B2F5E001C1A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18D07911B5B2F5E001C1A27 /* Soundtraks */;
+			targetProxy = C18D07AA1B5B2F5E001C1A27 /* PBXContainerItemProxy */;
+		};
+		C18D07B61B5B2F5E001C1A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18D07911B5B2F5E001C1A27 /* Soundtraks */;
+			targetProxy = C18D07B51B5B2F5E001C1A27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C18D07991B5B2F5E001C1A27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18D079A1B5B2F5E001C1A27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C18D07A11B5B2F5E001C1A27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18D07A21B5B2F5E001C1A27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C18D07BB1B5B2F5E001C1A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C18D07BC1B5B2F5E001C1A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C18D07BE1B5B2F5E001C1A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Soundtraks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.Soundtraks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C18D07BF1B5B2F5E001C1A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Soundtraks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.Soundtraks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C18D07C11B5B2F5E001C1A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoundtraksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.SoundtraksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Soundtraks.app/Soundtraks";
+			};
+			name = Debug;
+		};
+		C18D07C21B5B2F5E001C1A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoundtraksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.SoundtraksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Soundtraks.app/Soundtraks";
+			};
+			name = Release;
+		};
+		C18D07C41B5B2F5E001C1A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoundtraksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.SoundtraksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Soundtraks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C18D07C51B5B2F5E001C1A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoundtraksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.SoundtraksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Soundtraks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C18D078D1B5B2F5E001C1A27 /* Build configuration list for PBXProject "Soundtraks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D07BB1B5B2F5E001C1A27 /* Debug */,
+				C18D07BC1B5B2F5E001C1A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18D07BD1B5B2F5E001C1A27 /* Build configuration list for PBXNativeTarget "Soundtraks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D07BE1B5B2F5E001C1A27 /* Debug */,
+				C18D07BF1B5B2F5E001C1A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C18D07C01B5B2F5E001C1A27 /* Build configuration list for PBXNativeTarget "SoundtraksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D07C11B5B2F5E001C1A27 /* Debug */,
+				C18D07C21B5B2F5E001C1A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C18D07C31B5B2F5E001C1A27 /* Build configuration list for PBXNativeTarget "SoundtraksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D07C41B5B2F5E001C1A27 /* Debug */,
+				C18D07C51B5B2F5E001C1A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C18D079C1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C18D079D1B5B2F5E001C1A27 /* Soundtraks.xcdatamodel */,
+			);
+			currentVersion = C18D079D1B5B2F5E001C1A27 /* Soundtraks.xcdatamodel */;
+			path = Soundtraks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C18D078A1B5B2F5E001C1A27 /* Project object */;
+}
