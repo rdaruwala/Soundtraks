@@ -11,6 +11,8 @@
 		C126EBED1B5B7C8B00511F07 /* studentAreaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBEC1B5B7C8B00511F07 /* studentAreaLoginViewController.swift */; };
 		C126EBF01B5B818E00511F07 /* LeftToRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBEF1B5B818E00511F07 /* LeftToRightSegue.swift */; };
 		C126EBF51B5B862C00511F07 /* normalSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBF41B5B862C00511F07 /* normalSignupViewController.swift */; };
+		C12941EB1B64468E008D3F1F /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12941EA1B64468E008D3F1F /* Concert.swift */; };
+		C14FE4A51B64335A00252214 /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14FE4A41B64335A00252214 /* scheduleViewController.swift */; };
 		C18D07961B5B2F5E001C1A27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */; };
 		C18D07981B5B2F5E001C1A27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07971B5B2F5E001C1A27 /* ViewController.swift */; };
 		C18D079B1B5B2F5E001C1A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18D07991B5B2F5E001C1A27 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		C126EBEC1B5B7C8B00511F07 /* studentAreaLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentAreaLoginViewController.swift; sourceTree = "<group>"; };
 		C126EBEF1B5B818E00511F07 /* LeftToRightSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegue.swift; sourceTree = "<group>"; };
 		C126EBF41B5B862C00511F07 /* normalSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = normalSignupViewController.swift; sourceTree = "<group>"; };
+		C12941EA1B64468E008D3F1F /* Concert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
+		C14FE4A41B64335A00252214 /* scheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
 		C18D07921B5B2F5E001C1A27 /* Soundtraks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundtraks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C18D07971B5B2F5E001C1A27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				C126EBEC1B5B7C8B00511F07 /* studentAreaLoginViewController.swift */,
 				C126EBEA1B5B556000511F07 /* signUpViewController.swift */,
 				C126EBF41B5B862C00511F07 /* normalSignupViewController.swift */,
+				C14FE4A41B64335A00252214 /* scheduleViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +161,14 @@
 				C126EBEF1B5B818E00511F07 /* LeftToRightSegue.swift */,
 			);
 			name = Misc;
+			sourceTree = "<group>";
+		};
+		C12941EC1B644697008D3F1F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C12941EA1B64468E008D3F1F /* Concert.swift */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		C18D07891B5B2F5E001C1A27 = {
@@ -182,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */,
+				C12941EC1B644697008D3F1F /* Objects */,
 				C126EBF11B5B819B00511F07 /* Misc */,
 				C1E3766F1B5B2FDE0031E1A7 /* Frameworks */,
 				C126EBEE1B5B805500511F07 /* ViewControllers */,
@@ -370,8 +384,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C18D079E1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld in Sources */,
+				C12941EB1B64468E008D3F1F /* Concert.swift in Sources */,
 				C126EBF51B5B862C00511F07 /* normalSignupViewController.swift in Sources */,
 				C18D07981B5B2F5E001C1A27 /* ViewController.swift in Sources */,
+				C14FE4A51B64335A00252214 /* scheduleViewController.swift in Sources */,
 				C126EBF01B5B818E00511F07 /* LeftToRightSegue.swift in Sources */,
 				C126EBEB1B5B556000511F07 /* signUpViewController.swift in Sources */,
 				C126EBED1B5B7C8B00511F07 /* studentAreaLoginViewController.swift in Sources */,
