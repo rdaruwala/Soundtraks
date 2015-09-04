@@ -35,12 +35,14 @@ class scheduleViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     /**
     Returns the size of the array containing college names
     **/
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return concertList.count
     }
+    
     /**
     Sets the table view
     **/
@@ -50,6 +52,7 @@ class scheduleViewController: UIViewController {
         return cell
         
     }
+    
     /**
     Removes a college from the table view list
     **/

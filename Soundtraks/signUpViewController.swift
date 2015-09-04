@@ -46,10 +46,8 @@ class signUpViewController: UIViewController {
     @IBAction func onSubmitButtonTap(sender: AnyObject) {
         self.resignFirstResponder()
         activityMonitor.startAnimating()
-        print("1")
         if(usernameTakenLabel.hidden == true){
             if(usernameTextField.text != "" && emailTextField.text != "" && pass1TextField.text != "" && pass2textField.text != "" && usernameTextField.text != nil && emailTextField.text != nil && pass1TextField.text != nil && pass2textField.text != nil){
-                print("2")
                 if(pass1TextField.text == pass2textField.text){
                     let newUser = PFUser()
                     newUser.username = usernameTextField.text
@@ -61,7 +59,7 @@ class signUpViewController: UIViewController {
                         if error == nil {
                             
                             dispatch_async(dispatch_get_main_queue()) {
-                                //self.performSegueWithIdentifier("signInToNavigation", sender: self)
+                                self.dismissViewControllerAnimated(true, completion: nil)
                                 print("REGISTERED YO")
                                 self.loginErrorLabel.hidden = true
                             }

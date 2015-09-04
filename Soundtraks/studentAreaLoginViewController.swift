@@ -44,8 +44,7 @@ class studentAreaLoginViewController: UIViewController {
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil {
                     dispatch_async(dispatch_get_main_queue()) {
-                        //self.performSegueWithIdentifier("signInToNavigation", sender: self)
-                        print("YOURE IN")
+                        self.performSegueWithIdentifier("login2schedule", sender: self)
                     }
                 } else {
                     self.activityMonitor.stopAnimating()
