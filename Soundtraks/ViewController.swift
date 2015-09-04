@@ -15,11 +15,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var invalidLoginLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var studentAreaButton: UIButton!
+    
+    var stuffArray:[AnyObject]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         activityMonitor.hidden = true
         invalidLoginLabel.hidden = true
+        stuffArray = [usernameTextField, passwordTextField]
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,5 +48,14 @@ class ViewController: UIViewController {
             self.performSegueWithIdentifier("signupSegue", sender: self)
         }
         
+    @IBAction func onScreenTapAction(sender: AnyObject) {
+        
+        for object in stuffArray{
+            if(object.frame.contains(sender.locationInView(self.view)) == false){
+                usernameTextField.resignFirstResponder()
+                passwordTextField.resignFirstResponder()
+            }
+        }
+    }
 }
 

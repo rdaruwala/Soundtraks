@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBv-Bj-iV3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBv-Bj-iV3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -225,7 +225,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="7Ez-Ow-KDt" firstAttribute="centerX" secondItem="SZT-1Z-Gc9" secondAttribute="centerX" id="1bG-Zt-N3M"/>
                             <constraint firstItem="boz-vX-keg" firstAttribute="centerY" secondItem="NWa-HX-0He" secondAttribute="centerY" id="24F-vm-PwE"/>
@@ -285,18 +285,13 @@
                                     <action selector="onSignupButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ttl-Bm-3t6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0J-Ih-N5m">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0J-Ih-N5m">
                                 <rect key="frame" x="255" y="550" width="90" height="30"/>
                                 <state key="normal" title="Student Area"/>
                                 <connections>
                                     <action selector="onStudentAreaButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVM-3n-lPB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uwt-97-ZhI">
-                                <rect key="frame" x="20" y="202" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKV-3P-OgJ">
                                 <rect key="frame" x="20" y="135" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -305,13 +300,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWk-nz-WPR">
                                 <rect key="frame" x="20" y="106" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHM-xh-cMJ">
                                 <rect key="frame" x="20" y="173" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BQk-Op-8gf">
@@ -323,8 +318,14 @@
                                 <color key="textColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uwt-97-ZhI">
+                                <rect key="frame" x="20" y="202" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Uwt-97-ZhI" secondAttribute="trailing" id="0vX-p9-oDc"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Uwt-97-ZhI" secondAttribute="leading" id="5d2-go-On5"/>
@@ -332,6 +333,7 @@
                             <constraint firstItem="fHM-xh-cMJ" firstAttribute="top" secondItem="JKV-3P-OgJ" secondAttribute="bottom" constant="8" id="KD9-fr-SPQ"/>
                             <constraint firstItem="Uwt-97-ZhI" firstAttribute="top" secondItem="fHM-xh-cMJ" secondAttribute="bottom" constant="8" id="Sgn-h1-ciX"/>
                             <constraint firstItem="BQk-Op-8gf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ujf-jX-yAz"/>
+                            <constraint firstItem="v0J-Ih-N5m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WK5-gX-1pw"/>
                             <constraint firstItem="JWw-Xw-fiJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zxt-Ps-SNx"/>
                             <constraint firstItem="JKV-3P-OgJ" firstAttribute="top" secondItem="yWk-nz-WPR" secondAttribute="bottom" constant="8" id="apf-wf-H2J"/>
                             <constraint firstAttribute="leadingMargin" secondItem="JKV-3P-OgJ" secondAttribute="leading" id="bSh-Hy-QHn"/>
@@ -340,18 +342,29 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v0J-Ih-N5m" secondAttribute="bottom" constant="20" id="yXz-mS-xSO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JKV-3P-OgJ" secondAttribute="trailing" id="yru-WV-n3a"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1pF-vc-xtE" appends="YES" id="p3j-sn-68L"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="TlD-ya-K7Q"/>
                     <connections>
                         <outlet property="activityMonitor" destination="BQk-Op-8gf" id="iS5-4N-fTE"/>
                         <outlet property="invalidLoginLabel" destination="WtG-rI-AKL" id="7DD-9d-s5f"/>
+                        <outlet property="loginButton" destination="JWw-Xw-fiJ" id="z4s-gC-YFl"/>
                         <outlet property="passwordTextField" destination="Uwt-97-ZhI" id="aAA-Bh-CsG"/>
+                        <outlet property="registerButton" destination="2W9-qK-9bR" id="UHR-9a-Qdo"/>
+                        <outlet property="studentAreaButton" destination="v0J-Ih-N5m" id="ZHl-Ca-am8"/>
                         <outlet property="usernameTextField" destination="JKV-3P-OgJ" id="qmo-Gh-GWo"/>
                         <segue destination="u79-fW-W6R" kind="custom" identifier="main2studentAreaSegue" customClass="LeftToRightSegue" customModule="Soundtraks" customModuleProvider="target" id="Om5-nv-AU9"/>
                         <segue destination="ksT-VY-zUX" kind="presentation" identifier="signupSegue" id="DWy-si-HoX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1pF-vc-xtE">
+                    <connections>
+                        <action selector="onScreenTapAction:" destination="BYZ-38-t0r" id="M4G-c8-Kpr"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1118" y="151"/>
         </scene>
@@ -416,7 +429,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="Nb5-Mu-osD" firstAttribute="centerY" secondItem="RFO-x9-hGs" secondAttribute="centerY" id="7Zs-N5-ZuD"/>
                             <constraint firstItem="Nb5-Mu-osD" firstAttribute="leading" secondItem="RFO-x9-hGs" secondAttribute="trailing" constant="8" id="BkM-86-qyl"/>
@@ -512,7 +525,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="cE2-c8-mvC" firstAttribute="top" secondItem="oNV-j4-T4F" secondAttribute="bottom" constant="8" id="0EQ-VD-23e"/>
                             <constraint firstItem="nHg-xq-cNL" firstAttribute="top" secondItem="cE2-c8-mvC" secondAttribute="bottom" constant="8" id="4J6-g5-7Ja"/>
