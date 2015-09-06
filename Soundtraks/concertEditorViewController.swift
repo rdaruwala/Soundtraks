@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class concertEditorViewController: UIViewController {
     
@@ -36,7 +37,16 @@ class concertEditorViewController: UIViewController {
     @IBAction func onSubmitButtonPress(sender: AnyObject) {
         if(eventNameTextField.text != "" && eventNameTextField.text != nil && locationTextField.text != nil && locationTextField.text != ""){
             
-            let newConcert = Concert(name: eventNameTextField.text!, date: datePicker.date, location: locationTextField.text!)
+            let newConcert = PFObject(className: "Concert")
+            newConcert.setObject(eventNameTextField.text!, forKey: "name")
+            newConcert.setObject(datePicker.date, forKey: "date")
+            newConcert.setObject(locationTextField.text!, forKey: "location")
+            newConcert.setObject("", forKey: "rawShiftText")
+            newConcert.setObject([["":""]], forKey: "shiftSchedule")
+            
+            
+            
+            //let newConcert = Concert(name: eventNameTextField.text!, date: datePicker.date, location: locationTextField.text!)
             
             
             let alert = UIAlertController(title: "Saved", message: "This concert has been created successfully!", preferredStyle: UIAlertControllerStyle.Alert)

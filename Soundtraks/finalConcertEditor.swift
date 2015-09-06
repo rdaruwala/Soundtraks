@@ -52,8 +52,9 @@ class finalConcertEditor: UIViewController {
                     }
                 }
             }
-        concertRecieved.rawShiftText = stuff
-        concertRecieved.shiftSchedule = schedule
+        
+        //concertRecieved.rawShiftText = stuff
+        //concertRecieved.shiftSchedule = schedule
     }
     
     func separateAndSave(todo: String, i: Int)->Bool{
@@ -61,7 +62,13 @@ class finalConcertEditor: UIViewController {
             if(separated.count == 2){
                 let position = separated[0]
                 let person = separated[1]
+                if let test:[String:String] = schedule[i]{
                 schedule[i][position] = person
+                }
+                else{
+                    schedule.append(["":""])
+                    schedule[i][position] = person
+                }
                 return true
             }
             else{
