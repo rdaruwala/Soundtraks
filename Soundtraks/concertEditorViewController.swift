@@ -16,7 +16,7 @@ class concertEditorViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     var concertList:[Concert]!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

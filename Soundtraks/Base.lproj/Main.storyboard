@@ -90,13 +90,44 @@
                     <view key="view" contentMode="scaleToFill" id="KLU-o7-sOy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Stuff" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z4r-Eh-d4K">
+                                <rect key="frame" x="20" y="236" width="560" height="255"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Format using: &lt;Position&gt;:&lt;Name&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNb-ie-nCy">
+                                <rect key="frame" x="20" y="207" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekq-Wa-LEE">
+                                <rect key="frame" x="20" y="520" width="560" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onSaveButtonTap:" destination="9ym-MA-2cs" eventType="touchUpInside" id="3xO-nl-mge"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ekq-Wa-LEE" secondAttribute="leading" id="3wk-1u-9fE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nNb-ie-nCy" secondAttribute="trailing" id="Ive-HW-HIh"/>
+                            <constraint firstItem="Z4r-Eh-d4K" firstAttribute="top" secondItem="nNb-ie-nCy" secondAttribute="bottom" constant="8" id="LWL-l7-ybl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z4r-Eh-d4K" secondAttribute="trailing" id="S08-XL-wxs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ekq-Wa-LEE" secondAttribute="trailing" id="acJ-Pz-0pd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="nNb-ie-nCy" secondAttribute="leading" id="bYa-jF-kXj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Z4r-Eh-d4K" secondAttribute="leading" id="z7u-tC-USF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X8B-3U-bU9">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="SLD-fu-A4U"/>
                         <barButtonItem key="rightBarButtonItem" title="LIVE CONCERT" id="Piu-Vj-haL"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveButton" destination="Ekq-Wa-LEE" id="nB4-Wy-SgB"/>
+                        <outlet property="textField" destination="Z4r-Eh-d4K" id="bMJ-Vg-qZN"/>
                         <segue destination="wcC-7s-1zk" kind="presentation" identifier="goingLive" id="kmY-qh-IqW"/>
                     </connections>
                 </viewController>

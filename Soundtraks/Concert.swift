@@ -14,14 +14,19 @@ class Concert {
     var name:String!
     var concertDate:NSDate!
     var location:String!
-    
-    init(name: String){
-        self.name = name
-    }
+    var shiftSchedule:[[String:String]]!
     
     init(name: String, date: NSDate, location: String){
         self.name = name
         self.concertDate = date
         self.location = location
+        shiftSchedule = [["":""]]
+    }
+    
+    init(name: String, date: NSDate, location: String, schedule:[[String:String]]){
+        self.name = name
+        self.concertDate = date
+        self.location = location
+        shiftSchedule = schedule
     }
 }
