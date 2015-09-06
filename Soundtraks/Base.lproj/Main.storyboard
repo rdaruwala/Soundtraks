@@ -77,7 +77,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="ICV-Ch-IIo">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="n5S-nD-c8e"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="n5S-nD-c8e">
+                            <connections>
+                                <action selector="editButtonAction:" destination="Hvs-tX-C9F" id="Nak-b8-59G"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" id="Pt1-pB-1Bx">
                             <connections>
                                 <action selector="onPlusButtonAction:" destination="Hvs-tX-C9F" id="WTv-CX-kFe"/>
