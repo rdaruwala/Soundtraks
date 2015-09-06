@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Parse
 
 class scheduleViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
 
-    var concertList:[Concert]!
+    var concertList:[AnyObject]!
 
     
     /**
@@ -22,9 +23,13 @@ class scheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         editButton.tag = 0
-        //colleges = defaults.objectForKey("Colleges") as? [College]
-        
-        if let isItEmpty:[Concert] = concertList{}
+        print("hi")
+        let query = PFQuery(className: "Concert")
+        query.orderByAscending("date")
+        concertList = query.findObjects()
+        print("a")
+        print(concertList)
+        if let isItEmpty:[AnyObject] = concertList{}
         else{
             concertList = []
         }
@@ -48,7 +53,7 @@ class scheduleViewController: UIViewController {
     **/
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = concertList[indexPath.row].name
+        cell.textLabel?.text = String(concertList[indexPath.row].objectForKey("name"))
         return cell
         
     }
@@ -116,7 +121,7 @@ class scheduleViewController: UIViewController {
         let next = segue.destinationViewController as? UINavigationController
         let destination = next?.topViewController as! finalConcertEditor
         let index = tableView.indexPathForSelectedRow?.row
-        destination.concertRecieved = concertList[index!]
+        destination.concertRecieved = concertList[index!] as! PFObject
         }
         
     }
