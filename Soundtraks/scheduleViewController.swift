@@ -24,7 +24,7 @@ class scheduleViewController: UIViewController {
         editButton.tag = 0
         //colleges = defaults.objectForKey("Colleges") as? [College]
         
-        if let isItEmpty:Concert = concertList[0]{}
+        if let isItEmpty:[Concert] = concertList{}
         else{
             concertList = []
         }
@@ -68,7 +68,7 @@ class scheduleViewController: UIViewController {
     Runs when the + button is tapped. Creates an alert to add a new college to the list
     **/
     @IBAction func onPlusButtonAction(sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "Add new concert", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        /*let alert = UIAlertController(title: "Add new concert", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Concert Name"
         }
@@ -83,7 +83,8 @@ class scheduleViewController: UIViewController {
             self.tableView.reloadData()
         }
         alert.addAction(addAction)
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.presentViewController(alert, animated: true, completion: nil)*/
+        self.performSegueWithIdentifier("table2editor", sender: self)
     }
     
     /**

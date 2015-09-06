@@ -17,12 +17,13 @@ class studentAreaLoginViewController: UIViewController {
     @IBOutlet weak var activityMonitor: UIActivityIndicatorView!
     @IBOutlet weak var invalidLoginLabel: UILabel!
     
-    
+    var stuffArray:[AnyObject]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         activityMonitor.hidden = true
         invalidLoginLabel.hidden = true
+        stuffArray = [usernameTextField, passwordTextField]
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +44,9 @@ class studentAreaLoginViewController: UIViewController {
             PFUser.logInWithUsernameInBackground(usernameTextField.text!, password: passwordTextField.text!) {
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil {
+                    print(user?.password)
                     dispatch_async(dispatch_get_main_queue()) {
+                        print(user?.password)
                         self.performSegueWithIdentifier("login2schedule", sender: self)
                     }
                 } else {
@@ -51,7 +54,7 @@ class studentAreaLoginViewController: UIViewController {
                     self.activityMonitor.hidden = true
                     
                     if let message: AnyObject = error!.userInfo["error"] {
-                        self.invalidLoginLabel.text = message as! String
+                        self.invalidLoginLabel.text = message as? String
                     }
                     
                     self.invalidLoginLabel.hidden = false
@@ -61,4 +64,12 @@ class studentAreaLoginViewController: UIViewController {
         
     }
     
+    @IBAction func onScreenTapAction(sender: AnyObject) {
+        for object in stuffArray{
+            if(object.frame.contains(sender.locationInView(self.view)) == false){
+                usernameTextField.resignFirstResponder()
+                passwordTextField.resignFirstResponder()
+            }
+        }
+    }
 }
