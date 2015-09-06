@@ -151,22 +151,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObW-Kv-Dch">
+                                <rect key="frame" x="20" y="453" width="560" height="30"/>
+                                <state key="normal" title="Create Event"/>
+                                <connections>
+                                    <action selector="onSubmitButtonPress:" destination="FBb-CQ-bpN" eventType="touchUpInside" id="QDd-XS-VEh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fNs-Cd-hM4" firstAttribute="top" secondItem="6ue-xH-0FI" secondAttribute="bottom" constant="8" id="1eR-jq-GLL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wxw-8f-XAT" secondAttribute="trailing" id="41o-dl-Pq4"/>
+                            <constraint firstItem="ua3-Pf-HM2" firstAttribute="top" secondItem="Lfd-xR-vMH" secondAttribute="bottom" constant="8" id="6zz-th-k4Z"/>
                             <constraint firstItem="Xb6-vI-541" firstAttribute="leading" secondItem="hRU-bQ-Q6u" secondAttribute="leadingMargin" constant="-20" id="LGd-pR-NM1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xb6-vI-541" secondAttribute="trailing" constant="-20" id="Rf9-SZ-pMr"/>
                             <constraint firstItem="Lfd-xR-vMH" firstAttribute="top" secondItem="fNs-Cd-hM4" secondAttribute="bottom" constant="20" id="U8d-kj-RbY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fNs-Cd-hM4" secondAttribute="trailing" id="Uw8-ib-WIC"/>
                             <constraint firstItem="Xb6-vI-541" firstAttribute="top" secondItem="hRU-bQ-Q6u" secondAttribute="topMargin" id="ZRL-SC-Wb3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ObW-Kv-Dch" secondAttribute="trailing" id="dg3-6b-8LO"/>
                             <constraint firstItem="6ue-xH-0FI" firstAttribute="top" secondItem="Wxw-8f-XAT" secondAttribute="bottom" constant="20" id="gDh-a7-3Jo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ua3-Pf-HM2" secondAttribute="trailing" id="hiJ-Ew-ubL"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ua3-Pf-HM2" secondAttribute="leading" id="iMK-sr-IpL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ObW-Kv-Dch" secondAttribute="leading" id="vZf-fx-V8N"/>
                             <constraint firstItem="Xb6-vI-541" firstAttribute="top" secondItem="hRU-bQ-Q6u" secondAttribute="topMargin" id="yUn-vB-Pcj"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="fNs-Cd-hM4" id="uKQ-6u-JwF"/>
+                        <outlet property="eventNameTextField" destination="Wxw-8f-XAT" id="Uo4-KB-CPH"/>
+                        <outlet property="locationTextField" destination="ua3-Pf-HM2" id="cfq-na-flm"/>
+                        <outlet property="submitButton" destination="ObW-Kv-Dch" id="VHK-WE-OIF"/>
                         <segue destination="9ym-MA-2cs" kind="presentation" identifier="liveConcert" id="wHL-fE-OJ9"/>
                     </connections>
                 </viewController>

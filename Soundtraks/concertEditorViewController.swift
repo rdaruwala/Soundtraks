@@ -9,16 +9,35 @@
 import UIKit
 
 class concertEditorViewController: UIViewController {
+    
+    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var eventNameTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var concertList:[Concert]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        submitButton.backgroundColor = UIColor.clearColor()
+        submitButton.layer.cornerRadius = 10
+        submitButton.layer.borderWidth = 3
+        submitButton.layer.borderColor = UIColor.blueColor().CGColor
+        
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
+    @IBAction func onSubmitButtonPress(sender: AnyObject) {
+        if(eventNameTextField.text != "" && eventNameTextField.text != nil && locationTextField.text != nil && locationTextField.text != ""){
+            let newConcert = Concert(name: eventNameTextField.text!, date: datePicker.date, location: locationTextField.text!)
+            
+        }
+    }
+    
 }

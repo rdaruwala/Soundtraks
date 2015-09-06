@@ -112,9 +112,9 @@ class scheduleViewController: UIViewController {
     Sends a college name to the next view controller for displaying/editing
     **/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       /* let destination = segue.destinationViewController as! displayCollegeViewController
+        let destination = segue.destinationViewController as! liveConcertViewController
         let index = tableView.indexPathForSelectedRow?.row
-        destination.collegeRecieved = College(name:collegeList[index!])*/
+        destination.concertRecieved = concertList[index!]
         
     }
     

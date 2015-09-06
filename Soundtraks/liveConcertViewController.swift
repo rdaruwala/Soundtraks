@@ -9,6 +9,8 @@
 import UIKit
 
 class liveConcertViewController: UIViewController {
+    
+    var concertRecieved:Concert!
 
     override func viewDidLoad() {
         super.viewDidLoad()
