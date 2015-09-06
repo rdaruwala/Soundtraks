@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Parse
 
 class finalConcertEditor: UIViewController {
     
-    var concertRecieved:Concert!
+    var concertRecieved:PFObject!
     var schedule:[[String:String]]!
 
     @IBOutlet weak var textField: UITextView!
@@ -26,7 +27,7 @@ class finalConcertEditor: UIViewController {
         
         schedule = [["":""]]
         
-        textField.text = concertRecieved.rawShiftText
+        textField.text = String(concertRecieved.objectForKey("rawshiftText"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,8 +54,8 @@ class finalConcertEditor: UIViewController {
                 }
             }
         
-        //concertRecieved.rawShiftText = stuff
-        //concertRecieved.shiftSchedule = schedule
+        concertRecieved.setObject(stuff, forKey: "rawShiftText")
+        concertRecieved.setObject(schedule, forKey: "shiftSchedule")
     }
     
     func separateAndSave(todo: String, i: Int)->Bool{

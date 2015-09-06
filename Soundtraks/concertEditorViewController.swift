@@ -43,19 +43,24 @@ class concertEditorViewController: UIViewController {
             newConcert.setObject(locationTextField.text!, forKey: "location")
             newConcert.setObject("", forKey: "rawShiftText")
             newConcert.setObject([["":""]], forKey: "shiftSchedule")
+            newConcert.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+                if succeeded {
+                    let alert = UIAlertController(title: "Saved", message: "This concert has been created successfully!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: {void in
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    }))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "There was an error saving the concert.", preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: {void in
+                       //Do nothing
+                    }))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
             
-            
-            
-            //let newConcert = Concert(name: eventNameTextField.text!, date: datePicker.date, location: locationTextField.text!)
-            
-            
-            let alert = UIAlertController(title: "Saved", message: "This concert has been created successfully!", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: {void in
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }))
-            self.presentViewController(alert, animated: true, completion: nil)
             
         }
     }
     
+}
 }
