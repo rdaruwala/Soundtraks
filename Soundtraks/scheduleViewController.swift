@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class scheduleViewController: UIViewController {
+class scheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
@@ -23,19 +23,20 @@ class scheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         editButton.tag = 0
-        print("hi")
         let query = PFQuery(className: "Concert")
         query.orderByAscending("date")
         concertList = query.findObjects()
-        print("a")
         print(concertList)
         if let isItEmpty:[AnyObject] = concertList{}
         else{
             concertList = []
         }
         
-    }
+        self.tableView.reloadData()
+
     
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -53,7 +54,7 @@ class scheduleViewController: UIViewController {
     **/
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = String(concertList[indexPath.row].objectForKey("name"))
+        cell.textLabel?.text = String(concertList[indexPath.row].objectForKey("name")!)
         return cell
         
     }
@@ -118,8 +119,7 @@ class scheduleViewController: UIViewController {
     **/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier != "table2editor"){
-        let next = segue.destinationViewController as? UINavigationController
-        let destination = next?.topViewController as! finalConcertEditor
+        let destination = segue.destinationViewController as! finalConcertEditor
         let index = tableView.indexPathForSelectedRow?.row
         destination.concertRecieved = concertList[index!] as! PFObject
         }
