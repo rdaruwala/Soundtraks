@@ -84,7 +84,7 @@ class scheduleViewController: UIViewController {
         }
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)*/
-        self.performSegueWithIdentifier("liveConcert", sender: self)
+        self.performSegueWithIdentifier("table2editor", sender: self)
     }
     
     /**
@@ -112,9 +112,12 @@ class scheduleViewController: UIViewController {
     Sends a college name to the next view controller for displaying/editing
     **/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destination = segue.destinationViewController as! finalConcertEditor
+        if(segue.identifier != "table2editor"){
+        let next = segue.destinationViewController as? UINavigationController
+        let destination = next?.topViewController as! finalConcertEditor
         let index = tableView.indexPathForSelectedRow?.row
         destination.concertRecieved = concertList[index!]
+        }
         
     }
     

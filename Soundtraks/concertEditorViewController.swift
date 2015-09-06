@@ -35,7 +35,15 @@ class concertEditorViewController: UIViewController {
 
     @IBAction func onSubmitButtonPress(sender: AnyObject) {
         if(eventNameTextField.text != "" && eventNameTextField.text != nil && locationTextField.text != nil && locationTextField.text != ""){
+            
             let newConcert = Concert(name: eventNameTextField.text!, date: datePicker.date, location: locationTextField.text!)
+            
+            
+            let alert = UIAlertController(title: "Saved", message: "This concert has been created successfully!", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: {void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }))
+            self.presentViewController(alert, animated: true, completion: nil)
             
         }
     }

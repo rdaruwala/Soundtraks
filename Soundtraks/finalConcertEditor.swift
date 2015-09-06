@@ -25,6 +25,8 @@ class finalConcertEditor: UIViewController {
         saveButton.layer.borderColor = UIColor.blueColor().CGColor
         
         schedule = [["":""]]
+        
+        textField.text = concertRecieved.rawShiftText
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +52,7 @@ class finalConcertEditor: UIViewController {
                     }
                 }
             }
-        
+        concertRecieved.rawShiftText = stuff
         concertRecieved.shiftSchedule = schedule
     }
     
@@ -69,7 +71,6 @@ class finalConcertEditor: UIViewController {
         else{
             return false
         }
-        return false
     }
     
 

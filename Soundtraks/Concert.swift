@@ -15,12 +15,14 @@ class Concert {
     var concertDate:NSDate!
     var location:String!
     var shiftSchedule:[[String:String]]!
+    var rawShiftText:String!
     
     init(name: String, date: NSDate, location: String){
         self.name = name
         self.concertDate = date
         self.location = location
         shiftSchedule = [["":""]]
+        rawShiftText = ""
     }
     
     init(name: String, date: NSDate, location: String, schedule:[[String:String]]){
@@ -28,5 +30,6 @@ class Concert {
         self.concertDate = date
         self.location = location
         shiftSchedule = schedule
+        rawShiftText = ""
     }
 }
