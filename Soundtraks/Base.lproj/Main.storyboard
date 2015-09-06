@@ -72,17 +72,17 @@
                         <outlet property="editButton" destination="GSH-3x-Pws" id="zMt-Z7-bsn"/>
                         <outlet property="tableView" destination="oEn-Va-lF4" id="k2y-En-VYa"/>
                         <segue destination="FBb-CQ-bpN" kind="show" identifier="table2editor" id="lR0-dm-8j7"/>
-                        <segue destination="9ym-MA-2cs" kind="show" identifier="liveConcert" id="jFI-Qb-67L"/>
+                        <segue destination="4aU-PF-XOR" kind="show" identifier="liveConcert" id="jFI-Qb-67L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58c-JG-gg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5340" y="-154"/>
         </scene>
-        <!--Live Concert View Controller-->
+        <!--Final Concert Editor-->
         <scene sceneID="UB7-D1-ePY">
             <objects>
-                <viewController id="9ym-MA-2cs" customClass="liveConcertViewController" customModule="Soundtraks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9ym-MA-2cs" customClass="finalConcertEditor" customModule="Soundtraks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yjr-Dx-XCn"/>
                         <viewControllerLayoutGuide type="bottom" id="vgz-AK-tRA"/>
@@ -92,10 +92,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="X8B-3U-bU9">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="SLD-fu-A4U"/>
+                        <barButtonItem key="rightBarButtonItem" title="LIVE CONCERT" id="Piu-Vj-haL"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="wcC-7s-1zk" kind="presentation" identifier="goingLive" id="kmY-qh-IqW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25G-DH-7gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6145" y="-412"/>
+            <point key="canvasLocation" x="6957" y="-412"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aNz-cU-hC0">
+            <objects>
+                <viewController id="wcC-7s-1zk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s1u-vC-pN9"/>
+                        <viewControllerLayoutGuide type="bottom" id="52s-sp-wHW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ksN-r5-VHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMt-2y-xBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7831" y="-415"/>
         </scene>
         <!--Concert Editor View Controller-->
         <scene sceneID="ane-yi-Pvl">
@@ -707,6 +732,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcN-At-ncs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4528" y="-154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="21u-g0-Gme">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4aU-PF-XOR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MUm-lH-xop">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9ym-MA-2cs" kind="relationship" relationship="rootViewController" id="prT-Kk-Ygr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdw-jh-DV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6145" y="-412"/>
         </scene>
     </scenes>
 </document>

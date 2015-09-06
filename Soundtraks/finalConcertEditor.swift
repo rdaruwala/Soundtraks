@@ -8,7 +8,7 @@
 
 import UIKit
 
-class liveConcertViewController: UIViewController {
+class finalConcertEditor: UIViewController {
     
     var concertRecieved:Concert!
 

@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C11D26F71B64515800C08785 /* concertEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D26F61B64515800C08785 /* concertEditorViewController.swift */; };
-		C11D26F91B64516500C08785 /* liveConcertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D26F81B64516500C08785 /* liveConcertViewController.swift */; };
+		C11D26F91B64516500C08785 /* finalConcertEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D26F81B64516500C08785 /* finalConcertEditor.swift */; };
 		C126EBEB1B5B556000511F07 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBEA1B5B556000511F07 /* signUpViewController.swift */; };
 		C126EBED1B5B7C8B00511F07 /* studentAreaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBEC1B5B7C8B00511F07 /* studentAreaLoginViewController.swift */; };
 		C126EBF01B5B818E00511F07 /* LeftToRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBEF1B5B818E00511F07 /* LeftToRightSegue.swift */; };
 		C126EBF51B5B862C00511F07 /* normalSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126EBF41B5B862C00511F07 /* normalSignupViewController.swift */; };
 		C12941EB1B64468E008D3F1F /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12941EA1B64468E008D3F1F /* Concert.swift */; };
 		C14FE4A51B64335A00252214 /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14FE4A41B64335A00252214 /* scheduleViewController.swift */; };
+		C165CE271B9BF5AD00339006 /* concertLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165CE261B9BF5AD00339006 /* concertLive.swift */; settings = {ASSET_TAGS = (); }; };
 		C18D07961B5B2F5E001C1A27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */; };
 		C18D07981B5B2F5E001C1A27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D07971B5B2F5E001C1A27 /* ViewController.swift */; };
 		C18D079B1B5B2F5E001C1A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18D07991B5B2F5E001C1A27 /* Main.storyboard */; };
@@ -62,13 +63,14 @@
 
 /* Begin PBXFileReference section */
 		C11D26F61B64515800C08785 /* concertEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = concertEditorViewController.swift; sourceTree = "<group>"; };
-		C11D26F81B64516500C08785 /* liveConcertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = liveConcertViewController.swift; sourceTree = "<group>"; };
+		C11D26F81B64516500C08785 /* finalConcertEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finalConcertEditor.swift; sourceTree = "<group>"; };
 		C126EBEA1B5B556000511F07 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		C126EBEC1B5B7C8B00511F07 /* studentAreaLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = studentAreaLoginViewController.swift; sourceTree = "<group>"; };
 		C126EBEF1B5B818E00511F07 /* LeftToRightSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegue.swift; sourceTree = "<group>"; };
 		C126EBF41B5B862C00511F07 /* normalSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = normalSignupViewController.swift; sourceTree = "<group>"; };
 		C12941EA1B64468E008D3F1F /* Concert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
 		C14FE4A41B64335A00252214 /* scheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
+		C165CE261B9BF5AD00339006 /* concertLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = concertLive.swift; sourceTree = "<group>"; };
 		C18D07921B5B2F5E001C1A27 /* Soundtraks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundtraks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18D07951B5B2F5E001C1A27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C18D07971B5B2F5E001C1A27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +158,8 @@
 				C126EBF41B5B862C00511F07 /* normalSignupViewController.swift */,
 				C14FE4A41B64335A00252214 /* scheduleViewController.swift */,
 				C11D26F61B64515800C08785 /* concertEditorViewController.swift */,
-				C11D26F81B64516500C08785 /* liveConcertViewController.swift */,
+				C11D26F81B64516500C08785 /* finalConcertEditor.swift */,
+				C165CE261B9BF5AD00339006 /* concertLive.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -390,7 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C18D079E1B5B2F5E001C1A27 /* Soundtraks.xcdatamodeld in Sources */,
-				C11D26F91B64516500C08785 /* liveConcertViewController.swift in Sources */,
+				C11D26F91B64516500C08785 /* finalConcertEditor.swift in Sources */,
+				C165CE271B9BF5AD00339006 /* concertLive.swift in Sources */,
 				C12941EB1B64468E008D3F1F /* Concert.swift in Sources */,
 				C126EBF51B5B862C00511F07 /* normalSignupViewController.swift in Sources */,
 				C18D07981B5B2F5E001C1A27 /* ViewController.swift in Sources */,
