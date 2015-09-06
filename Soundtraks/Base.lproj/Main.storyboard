@@ -72,6 +72,7 @@
                         <outlet property="editButton" destination="GSH-3x-Pws" id="zMt-Z7-bsn"/>
                         <outlet property="tableView" destination="oEn-Va-lF4" id="k2y-En-VYa"/>
                         <segue destination="FBb-CQ-bpN" kind="show" identifier="table2editor" id="lR0-dm-8j7"/>
+                        <segue destination="9ym-MA-2cs" kind="show" identifier="liveConcert" id="jFI-Qb-67L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58c-JG-gg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25G-DH-7gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6227" y="-420"/>
+            <point key="canvasLocation" x="6145" y="-412"/>
         </scene>
         <!--Concert Editor View Controller-->
         <scene sceneID="ane-yi-Pvl">
@@ -182,7 +183,6 @@
                         <outlet property="eventNameTextField" destination="Wxw-8f-XAT" id="Uo4-KB-CPH"/>
                         <outlet property="locationTextField" destination="ua3-Pf-HM2" id="cfq-na-flm"/>
                         <outlet property="submitButton" destination="ObW-Kv-Dch" id="VHK-WE-OIF"/>
-                        <segue destination="9ym-MA-2cs" kind="presentation" identifier="liveConcert" id="wHL-fE-OJ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIl-9G-bSc" userLabel="First Responder" sceneMemberID="firstResponder"/>

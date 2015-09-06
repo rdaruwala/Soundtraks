@@ -84,7 +84,7 @@ class scheduleViewController: UIViewController {
         }
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)*/
-        self.performSegueWithIdentifier("table2editor", sender: self)
+        self.performSegueWithIdentifier("liveConcert", sender: self)
     }
     
     /**
