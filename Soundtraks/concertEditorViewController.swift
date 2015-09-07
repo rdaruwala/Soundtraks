@@ -47,7 +47,8 @@ class concertEditorViewController: UIViewController {
                 if succeeded {
                     let alert = UIAlertController(title: "Saved", message: "This concert has been created successfully!", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: {void in
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        //self.dismissViewControllerAnimated(true, completion: nil)
+                        self.performSegueWithIdentifier("returnToSched", sender: self)
                     }))
                     self.presentViewController(alert, animated: true, completion: nil)
                 } else {

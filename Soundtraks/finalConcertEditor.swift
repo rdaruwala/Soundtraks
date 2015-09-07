@@ -27,7 +27,7 @@ class finalConcertEditor: UIViewController {
         
         schedule = [["":""]]
         
-        textField.text = String(concertRecieved.objectForKey("rawshiftText"))
+        //textField.text = String(concertRecieved.objectForKey("rawshiftText"))
     }
 
     override func didReceiveMemoryWarning() {

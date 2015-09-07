@@ -14,7 +14,7 @@ class scheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
 
-    var concertList:[AnyObject]!
+    var concertList:[PFObject]!
 
     
     /**
@@ -25,13 +25,15 @@ class scheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         editButton.tag = 0
         let query = PFQuery(className: "Concert")
         query.orderByAscending("date")
-        concertList = query.findObjects()
+        concertList = query.findObjects() as! [PFObject]
         print(concertList)
         if let isItEmpty:[AnyObject] = concertList{}
         else{
             concertList = []
         }
         
+        tableView.delegate = self
+        tableView.dataSource = self
         self.tableView.reloadData()
 
     
@@ -64,8 +66,8 @@ class scheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     **/
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if(editingStyle == UITableViewCellEditingStyle.Delete){
+            concertList[indexPath.row].delete()
             concertList.removeAtIndex(indexPath.row)
-            saveData()
             tableView.reloadData()
         }
     }
@@ -74,22 +76,6 @@ class scheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     Runs when the + button is tapped. Creates an alert to add a new college to the list
     **/
     @IBAction func onPlusButtonAction(sender: UIBarButtonItem) {
-        /*let alert = UIAlertController(title: "Add new concert", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Concert Name"
-        }
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil)
-        alert.addAction(cancelAction)
-        
-        let addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default) { (action) -> Void in
-            let newConcertTextField = alert.textFields![0] as UITextField
-            let newConcert:Concert = Concert(name: newConcertTextField.text!)
-            self.concertList.append(newConcert)
-            self.saveData()
-            self.tableView.reloadData()
-        }
-        alert.addAction(addAction)
-        self.presentViewController(alert, animated: true, completion: nil)*/
         self.performSegueWithIdentifier("table2editor", sender: self)
     }
     
@@ -119,9 +105,9 @@ class scheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     **/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier != "table2editor"){
-        let destination = segue.destinationViewController as! finalConcertEditor
-        let index = tableView.indexPathForSelectedRow?.row
-        destination.concertRecieved = concertList[index!] as! PFObject
+            let destination = segue.destinationViewController as! finalConcertEditor
+            let index = tableView.indexPathForSelectedRow?.row
+            destination.concertRecieved = concertList[index!] as! PFObject
         }
         
     }
