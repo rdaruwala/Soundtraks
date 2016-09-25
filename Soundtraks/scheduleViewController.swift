@@ -104,7 +104,7 @@ class scheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     Sends a college name to the next view controller for displaying/editing
     **/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier != "table2editor"){
+        if(segue.identifier == "2live"){
             let destination = segue.destinationViewController as! finalConcertEditor
             let index = tableView.indexPathForSelectedRow?.row
             destination.concertRecieved = concertList[index!] as! PFObject

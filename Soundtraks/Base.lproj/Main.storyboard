@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBv-Bj-iV3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBv-Bj-iV3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -39,7 +39,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="9ym-MA-2cs" kind="show" id="QtI-LZ-VH6"/>
+                                            <segue destination="9ym-MA-2cs" kind="show" identifier="2live" id="QtI-LZ-VH6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -60,6 +60,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ap-fw-MCl">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="AoH-Iq-I4N"/>
+                                    <tabBarItem systemItem="more" id="Yrt-yq-wym"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -67,9 +75,12 @@
                             <constraint firstItem="jVz-5v-q57" firstAttribute="leading" secondItem="6JG-9E-g4a" secondAttribute="leadingMargin" constant="-20" id="IOe-9D-KT5"/>
                             <constraint firstItem="oEn-Va-lF4" firstAttribute="top" secondItem="jVz-5v-q57" secondAttribute="bottom" id="LO6-sV-RL6"/>
                             <constraint firstItem="fTc-hz-igt" firstAttribute="top" secondItem="oEn-Va-lF4" secondAttribute="bottom" id="Mb9-AL-V6a"/>
+                            <constraint firstItem="fTc-hz-igt" firstAttribute="top" secondItem="1Ap-fw-MCl" secondAttribute="bottom" id="PZM-gO-Pw5"/>
                             <constraint firstItem="oEn-Va-lF4" firstAttribute="leading" secondItem="6JG-9E-g4a" secondAttribute="leadingMargin" constant="-20" id="Qvr-5x-5TQ"/>
                             <constraint firstItem="jVz-5v-q57" firstAttribute="top" secondItem="6JG-9E-g4a" secondAttribute="topMargin" id="Y52-6h-YO4"/>
+                            <constraint firstItem="1Ap-fw-MCl" firstAttribute="leading" secondItem="6JG-9E-g4a" secondAttribute="leadingMargin" constant="-20" id="Ztk-Vr-4Cd"/>
                             <constraint firstItem="oEn-Va-lF4" firstAttribute="top" secondItem="jVz-5v-q57" secondAttribute="bottom" id="bxs-Co-Rum"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Ap-fw-MCl" secondAttribute="trailing" constant="-20" id="mXb-2m-oiT"/>
                             <constraint firstItem="jVz-5v-q57" firstAttribute="top" secondItem="6JG-9E-g4a" secondAttribute="topMargin" id="sP1-oT-x97"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oEn-Va-lF4" secondAttribute="trailing" constant="-20" id="umC-M3-ftt"/>
                             <constraint firstItem="oEn-Va-lF4" firstAttribute="top" secondItem="jVz-5v-q57" secondAttribute="bottom" id="yJN-6J-OZ8"/>
